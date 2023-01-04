@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Oste</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        table thead th{
+    background-color: black;
+    color: #f1f1f1;
+    }
+    table tbody :nth-child(even) td{
+            background-color: #f1f1f1;
+    }
+    table tbody :hover td{
+            background-color: #d9d9d9;
+            cursor: pointer;
+    }
+    </style>
+    <style>
+        .row {
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="#">Página Principal</a></li>
+                <li><a href="#">Sobre a Clínica</a></li>
+                <li><a href="#">Horário de Atendimento</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                               <!-- Aqui vai o seu header -->
+                <img title="Logotipo" alt="Logotipo Clínica Oste" src="image/logo.png">
+            </div>
+    
+            <div class="content">
+                <h1>Sobre a Clínica</h1><br>
+                <div style='text-align:left'>
+                    <h3>A clínica foi fundada em 2006 e conta com uma gama de osteopatas especializados em osteopatia! A osteopatia é um tipo de medicina alternativa que enfatiza a manipulação física do tecido muscular e dos ossos do corpo. Os praticantes de osteopatia são chamados de osteopatas.</h3>
+                </div>
+                <div>
+                    <img title="Clínica" alt="Sala de espera da clínica" src="image/clinica.jpg">
+                </div>
+                <div><br>
+                    <table width="400" align="center" cellspacing="0" cellpading="15">
+                        <thead>
+                            <tr>
+                                <th colspan="4">Horário de Atendimento</th>
+                            </tr>
+                            <tr>
+                                <th style="Serviços">Serviços</th>
+                                <th style="Dias">Segunda a Sexta</th>
+                                <th style="Sábados">Sábados</th>
+                                <th style="Feriados">Feriados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Clínica Geral</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 14h</td>
+                            </tr>
+                            <tr>
+                                <td>Psicologia</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 14h</td>
+                            </tr>
+                            <tr>
+                                <td>Pediatria</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Oftalmologia</td>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="footer">
+                <h1>Formulário Cadastro</h1>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="row">
+                        <label>Nome:</label><input type="text" />
+                        <label>Email:</label><input type="text" />
+                    </div>
+                </fieldset>
+                    <fieldset>
+                        <legend>Informações de Contato</legend>
+                        <div class="row">
+                            <label>Celular:</label><input type="text" />
+                            <label>Assunto:</label><input type="text" /><br>
+                            <label for="msg">Mensagem:</label><textarea id="msg"></textarea>
+                            </div>
+                        </div>
+                </fieldset>
+                <div class="row">
+                    <button type="reset">Limpar
+                    </button>
+                    <button type="submit">Enviar Formulário
+                    </button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
